@@ -1,0 +1,19 @@
+{
+  "whiteList": ["http://localhost:3000", "http://localhost:3001"],
+  "sessionSecret": "hello",
+  "sessionConfig": {
+    "secret": "hello",
+    "resave": false,
+    "saveUninitialized": false,
+    "cookie": {
+      "httpOnly": false,
+      "SameSite": "none",
+      "secure": true,
+      "maxAge": 36000000
+    }
+  },
+  "bcryptConfig": {
+    "saltRound": 10
+  },
+  "mongodbURI": "mongodb+srv://ntav:Ntav19001570@company.k6l36e7.mongodb.net/nodejs-assignment3?retryWrites=true&w=majority"
+}
