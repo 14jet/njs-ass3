@@ -20,7 +20,7 @@ const io = new Server(server, {
 
 // middlewares
 app.use(require("./middlewares/cors.middleware"));
-// app.set("trust proxy", 1);
+app.set("trust proxy", 1);
 app.use(require("body-parser").json());
 app.use(require("body-parser").urlencoded({ extended: false }));
 app.use(require("cookie-parser")());
