@@ -12,7 +12,7 @@
     "saveUninitialized": false,
     "cookie": {
       "httpOnly": false,
-      "samesite": "none",
+      "sameSite": "none",
       "secure": true,
       "maxAge": 36000000
     }
