@@ -126,6 +126,7 @@ module.exports.deleteProduct = async (req, res, next) => {
       return res.status(400).json({ message: "Not Found Product" });
     }
 
+    // xóa hình
     const images = product.images;
     if (images.length > 0) {
       images.map((image) =>
@@ -163,8 +164,6 @@ module.exports.addNewProduct = async (req, res, next) => {
     }
 
     const { name, price, count, category, shortDesc, longDesc } = req.body;
-
-    console.log(req.files);
 
     await Product.create({
       name,

@@ -1,3 +1,5 @@
+// soạn nội dung mail
+
 function composer(user, products) {
   let html = `
 <h1>Xin chào ${user.fullname}</h1>

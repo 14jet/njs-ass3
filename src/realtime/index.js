@@ -1,8 +1,5 @@
 const { v4: uuid } = require("uuid");
 
-const users = [];
-const admins = [];
-
 const realtimeHandler = (socket, io) => {
   socket.on("new-message", (data) => {
     const { roomID, message } = data;

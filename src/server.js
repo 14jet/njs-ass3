@@ -1,6 +1,6 @@
 require("dotenv").config();
 process.env["NODE_CONFIG_DIR"] = __dirname + "/configs/";
-const logger = require("./helpers/logger");
+const logger = require("./helpers/logger"); // ghi log
 
 const { Server } = require("socket.io");
 const express = require("express");
@@ -54,15 +54,6 @@ require("./helpers/connectDB")();
 io.on("connection", (socket) => {
   require("./realtime")(socket, io);
 });
-
-async function x() {
-  const hash = await require("bcrypt").hash(
-    "supporter",
-    require("config").get("bcryptConfig.saltRound")
-  );
-  console.log(hash);
-}
-x();
 
 const port = process.env.PORT || 5000;
 server.listen(port, () => {
