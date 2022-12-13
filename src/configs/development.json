@@ -2,7 +2,8 @@
   "whiteList": [
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://njs-assignment-3-admin.web.app"
+    "https://njs-assignment-3-admin.web.app",
+    "https://njs-assignment-3.web.app"
   ],
   "sessionSecret": "hello",
   "sessionConfig": {
